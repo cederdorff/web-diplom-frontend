@@ -50,6 +50,8 @@ button {
 
 #content {
   background-color: var(--green);
+  color: var(--text-color-light);
+  padding: 1em;
 }
 
 /* ---------- grid container styling ---------- */

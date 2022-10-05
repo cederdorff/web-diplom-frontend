@@ -86,6 +86,6 @@ a {
 .flexbox article img {
   width: 100%;
   max-width: 150px;
-  height: auto;
-  border-radius: 50%;
+  height: 120px;
+  object-fit: cover;
 }
