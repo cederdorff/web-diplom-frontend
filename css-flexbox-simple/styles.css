@@ -1,0 +1,35 @@
+/* ---------- root variables ---------- */
+:root {
+  --green: rgb(38, 76, 89);
+  --green-opacity: rgba(38, 76, 89, 0.2);
+  --light-green: rgb(172, 198, 201);
+  --light-grey: #f1f1f4;
+  --text-color-light: #f1f1f1;
+  --text-color-dark: #333;
+  --white: #fff;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ---------- general styling ---------- */
+html,
+body {
+  color: var(--text-color-dark);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: var(--light-grey);
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+/* ---------- flexbox styling ---------- */
+
+section {
+  display: flex;
+}
