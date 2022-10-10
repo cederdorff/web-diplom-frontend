@@ -1,0 +1,37 @@
+/* ---------- root variables ---------- */
+:root {
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ---------- general styling ---------- */
+html,
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0 1em;
+}
+
+header {
+  margin: 0 0 3em;
+  max-width: 600px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  max-width: 600px;
+  float: right;
+  margin: 0;
+}
+
+figcaption {
+  text-align: right;
+}
+
+.steps {
+  clear: both;
+  width: 100%;
+}
