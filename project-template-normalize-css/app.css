@@ -1,0 +1,18 @@
+/* ---------- root variables ---------- */
+:root {
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ---------- general styling ---------- */
+html,
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- header styling ---------- */
+
+/* ---------- navigation styling ---------- */
+
+/* ---------- footer styling ---------- */
