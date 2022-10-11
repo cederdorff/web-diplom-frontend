@@ -17,7 +17,6 @@ html {
   color: var(--text-color-dark);
   font-family: var(--font-family);
   height: 100%;
-  text-align: center;
   width: 100%;
 }
 
@@ -73,12 +72,12 @@ header {
   background-color: var(--green);
   color: var(--text-color-light);
   padding: 13.5px;
-  text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+  text-align: center;
 }
 
 /* ---------- main (page) styling ---------- */
@@ -113,8 +112,7 @@ main {
 }
 
 .grid-container > article {
-  text-align: center;
-  padding: 2em 1em;
+  padding: 2em;
   background-color: var(--white);
   transition: 0.5s;
 }
@@ -125,8 +123,8 @@ main {
 
 .grid-container > article img {
   width: 100%;
-  max-width: 250px;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
 }
 
 /* ---------- form styling ---------- */
