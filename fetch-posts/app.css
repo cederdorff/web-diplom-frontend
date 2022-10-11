@@ -1,0 +1,172 @@
+/* ---------- root variables ---------- */
+:root {
+  --green: rgb(38, 76, 89);
+  --green-opacity: rgba(38, 76, 89, 0.2);
+  --light-green: rgb(172, 198, 201);
+  --light-grey: #f1f1f4;
+  --text-color-light: #f1f1f1;
+  --text-color-dark: #333;
+  --white: #fff;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --text-color-out-of-stock: rgb(89, 38, 38);
+  --text-color-in-stock: rgb(172, 198, 201);
+}
+
+/* ---------- general styling ---------- */
+html {
+  color: var(--text-color-dark);
+  font-family: var(--font-family);
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0.5em 0 0.2em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- header styling ---------- */
+header {
+  background-color: var(--green);
+  color: var(--text-color-light);
+  padding: 13.5px;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* ---------- main (page) styling ---------- */
+main {
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 164px);
+  background: var(--light-grey);
+  animation: fadeIn 0.4s;
+  /* padding equals height of tabbar and topbar */
+  padding: 164px 0 0;
+}
+
+/* ---------- grid container styling ---------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  gap: 1em;
+  background-color: var(--light-grey);
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid-container > article {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: var(--white);
+  transition: 0.5s;
+}
+
+.grid-container > article:hover {
+  box-shadow: 0 8px 16px 0 var(--green-opacity);
+}
+
+.grid-container > article img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+/* ---------- form styling ---------- */
+/* input form stryling */
+form {
+  margin: auto;
+}
+
+button {
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  color: var(--text-color-light);
+  background-color: var(--green);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1em;
+  width: 100%;
+  max-width: 350px;
+}
+
+input {
+  margin: 1em auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 1em;
+  box-sizing: border-box;
+  display: block;
+  background: var(--white);
+}
+
+header input {
+  border: none;
+}
+
+form select {
+  width: 100%;
+  background-color: var(--light-green);
+  color: var(--text-color-dark);
+}
