@@ -1,6 +1,9 @@
+/* ---------- imports ---------- */
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans"); */
+
 /* ---------- root variables ---------- */
 :root {
-  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 /* ---------- general styling ---------- */
