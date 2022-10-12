@@ -63,39 +63,3 @@ figure {
 .ingredients {
     flex: 50%;
 }
-
-/* ---------- flexbox responsive styling ---------- */
-
-/* @media (min-width: 700px) {
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .description {
-    flex: 60%;
-  }
-
-  figure {
-    flex: 40%;
-  }
-
-  .steps {
-    flex: 50%;
-  }
-
-  .ingredients {
-    flex: 50%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .description {
-    flex: 50%;
-    align-self: center;
-  }
-
-  figure {
-    flex: 50%;
-  }
-} */
