@@ -42,7 +42,6 @@ figure {
 }
 
 /* ---------- flexbox responsive styling ---------- */
-
 @media (min-width: 700px) {
     .flex-container {
         display: flex;
