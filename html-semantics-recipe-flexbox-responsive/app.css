@@ -1,0 +1,101 @@
+/* ---------- imports ---------- */
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans"); */
+
+/* ---------- root variables ---------- */
+:root {
+    --font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+/* ---------- general styling ---------- */
+html,
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0 1em;
+    line-height: 1.5;
+}
+
+header {
+    margin: 0 0 3em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: right;
+}
+
+figure {
+    margin: 0;
+}
+
+.description h2 {
+    margin: 0 0 0.5em 0;
+}
+
+.description p {
+    padding: 0 2em 0 0;
+}
+
+/* ---------- flexbox styling ---------- */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description {
+    flex: 60%;
+    align-self: center;
+}
+
+figure {
+    flex: 40%;
+}
+
+.steps {
+    flex: 50%;
+}
+
+.ingredients {
+    flex: 50%;
+}
+
+/* ---------- flexbox responsive styling ---------- */
+
+/* @media (min-width: 700px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .description {
+    flex: 60%;
+  }
+
+  figure {
+    flex: 40%;
+  }
+
+  .steps {
+    flex: 50%;
+  }
+
+  .ingredients {
+    flex: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description {
+    flex: 50%;
+    align-self: center;
+  }
+
+  figure {
+    flex: 50%;
+  }
+} */
