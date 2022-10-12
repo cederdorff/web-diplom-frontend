@@ -44,7 +44,7 @@ figure {
 /* ---------- flexbox styling ---------- */
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*The flex items break into multiple lines.*/
 }
 
 .description {
