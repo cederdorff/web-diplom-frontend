@@ -1,0 +1,61 @@
+/* ---------- root variables ---------- */
+:root {
+    --green: rgb(38, 76, 89);
+    --light-green: rgb(172, 198, 201);
+    --light-grey: #f1f1f4;
+    --text-color-light: #f1f1f1;
+    --text-color-dark: #333;
+    --text-color-danger: rgb(152, 58, 58);
+    --white: #f1f1f1;
+}
+
+html,
+body {
+    color: var(--text-color-dark);
+    background-color: var(--light-green);
+    min-height: calc(100vh - 58px - 2em);
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    padding: 58px 2em 0;
+    background-color: var(--light-green);
+}
+
+/* ---------- nav styling ---------- */
+nav {
+    background-color: var(--green);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    display: inline-block;
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: var(--light-grey);
+    color: var(--text-color-dark);
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+    background-color: var(--light-green);
+    color: var(--green);
+}
