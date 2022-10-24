@@ -1,21 +1,27 @@
 const persons = [
     {
-        name: "Birgitte",
+        name: "Birgitte Kirk Iversen",
         mail: "bki@mail.dk",
-        birthDate: "1966-01-14",
+        title: "Senior Lecturer",
         img: "https://www.eaaa.dk/media/u4gorzsd/birgitte-kirk-iversen2.jpg?width=800&height=450"
     },
     {
-        name: "Martin",
+        name: "Martin Aagaard Nøhr",
         mail: "mnor@mail.dk",
-        birthDate: "1989-05-02",
+        title: "Lecturer",
         img: "https://www.eaaa.dk/media/oayjq02h/martin-n%C3%B8hr.jpg?width=800&height=450"
     },
     {
-        name: "Rasmus",
+        name: "Rasmus Cederdorff",
         mail: "race@mail.dk",
-        birthDate: "1990-09-15",
+        title: "Senior Lecturer",
         img: "https://www.eaaa.dk/media/devlvvgj/rasmus-cederdorff.jpg?width=800&height=450"
+    },
+    {
+        name: "Dan Okkels Brendstrup",
+        mail: "dob@mail.dk",
+        title: "Lecturer",
+        img: "https://www.eaaa.dk/media/bdojel41/dan-okkels-brendstrup.jpg?width=800&height=450"
     }
 ];
 
@@ -26,8 +32,8 @@ for (const person of persons) {
       <article>
         <img src="${person.img}">
         <h2>${person.name}</h2>
+        <p>${person.title}</p>
         <a href="mailto:${person.mail}">${person.mail}</a>
-        <p>Birth date: ${person.birthDate}</p>
       </article>
     `;
 }
