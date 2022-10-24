@@ -152,13 +152,13 @@ nav a.active {
     box-shadow: 0 8px 16px 0 var(--green);
 }
 
-.grid-container > article img {
+.grid-container img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.grid-container > article p {
+.grid-container p {
     margin: 0.3em 0;
 }
 
