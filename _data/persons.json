@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Birgitte Kirk Iversen",
+        "mail": "bki@mail.dk",
+        "title": "Senior Lecturer",
+        "img": "https://www.eaaa.dk/media/u4gorzsd/birgitte-kirk-iversen2.jpg?width=800&height=450"
+    },
+    {
+        "name": "Martin Aagaard Nøhr",
+        "mail": "mnor@mail.dk",
+        "title": "Lecturer",
+        "img": "https://www.eaaa.dk/media/oayjq02h/martin-n%C3%B8hr.jpg?width=800&height=450"
+    },
+    {
+        "name": "Rasmus Cederdorff",
+        "mail": "race@mail.dk",
+        "title": "Senior Lecturer",
+        "img": "https://www.eaaa.dk/media/devlvvgj/rasmus-cederdorff.jpg?width=800&height=450"
+    },
+    {
+        "name": "Dan Okkels Brendstrup",
+        "mail": "dob@mail.dk",
+        "title": "Lecturer",
+        "img": "https://www.eaaa.dk/media/bdojel41/dan-okkels-brendstrup.jpg?width=800&height=450"
+    },
+    {
+        "name": "Line Skjødt",
+        "mail": "lskj@mail.dk",
+        "title": "Senior Lecturer & Internship Coordinator",
+        "img": "https://www.eaaa.dk/media/14qpfeq4/line-skj%C3%B8dt.jpg?width=800&height=450"
+    },
+    {
+        "name": "Kasper Fischer Topp",
+        "mail": "kato@mail.dk",
+        "title": "Lecturer",
+        "img": "https://www.eaaa.dk/media/lxzcybme/kasper-topp.jpg?width=800&height=450"
+    }
+]
