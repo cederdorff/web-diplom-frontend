@@ -139,6 +139,11 @@ nav a.active {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+@media (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 
 .grid-container > article {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
