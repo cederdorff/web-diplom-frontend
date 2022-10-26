@@ -29,7 +29,6 @@ console.log(persons);
 
 function displayPersons() {
     let html = "";
-
     //loop through all persons and create an article with content for each
     for (const person of persons) {
         html += /*html*/ `
