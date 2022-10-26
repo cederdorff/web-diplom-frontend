@@ -170,7 +170,7 @@ nav a.active {
 /* ---------- form styling ---------- */
 
 form {
-    margin: auto;
+    margin: 2em auto;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     text-align: center;
     padding: 1em 1em 2em;

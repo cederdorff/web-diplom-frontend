@@ -27,13 +27,38 @@ const persons = [
 
 console.log(persons);
 
-for (const person of persons) {
-    document.querySelector("#content").innerHTML += /*html*/ `
-      <article>
-        <img src="${person.img}">
-        <h2>${person.name}</h2>
-        <p>${person.title}</p>
-        <a href="mailto:${person.mail}">${person.mail}</a>
-      </article>
-    `;
+function displayPersons() {
+    let html = "";
+
+    //loop through all persons and create an article with content for each
+    for (const person of persons) {
+        html += /*html*/ `
+            <article>
+                <img src="${person.img}">
+                <h2>${person.name}</h2>
+                <p>${person.title}</p>
+                <a href="mailto:${person.mail}">${person.mail}</a>
+            </article>
+        `;
+    }
+    document.querySelector("#content").innerHTML = html; // set grid container with person <article>-s
+}
+
+displayPersons();
+
+function saveUser(event) {
+    event.preventDefault(); // prevent form refreshing page
+    const form = event.target; // save reference to form in varaiable
+
+    // create new person object based on input values
+    const newPerson = {
+        name: form.name.value,
+        mail: form.mail.value,
+        title: form.title.value,
+        img: form.url.value
+    };
+
+    persons.push(newPerson); // add new peron object to array (persons)
+    displayPersons(); // make sure to reload all persons
+    form.reset(); // reset (clear) input fields
 }
