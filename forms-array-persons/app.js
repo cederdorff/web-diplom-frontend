@@ -45,7 +45,7 @@ function displayPersons() {
 
 displayPersons();
 
-function saveUser(event) {
+function savePerson(event) {
     event.preventDefault(); // prevent form refreshing page
     const form = event.target; // save reference to form in varaiable
 
