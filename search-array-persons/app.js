@@ -22,6 +22,12 @@ const persons = [
         mail: "dob@mail.dk",
         title: "Lecturer",
         img: "https://www.eaaa.dk/media/bdojel41/dan-okkels-brendstrup.jpg?width=800&height=450"
+    },
+    {
+        name: "Anne Kirketerp",
+        mail: "anki@mail.dk",
+        title: "Head of Department",
+        img: "https://www.baaa.dk/media/5buh1xeo/anne-kirketerp.jpg?width=800&height=450"
     }
 ];
 
