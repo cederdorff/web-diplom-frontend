@@ -1,3 +1,4 @@
+// ========== imports ========== //
 import { persons } from "./data.js";
 import { search, sortPersons, showLecturers } from "./helpers.js";
 
