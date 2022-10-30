@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Modules - Person Array</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
+  <link rel="stylesheet" href="app.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <h1>Modules - Person Array</h1>
+
+  </header>
+  <main>
+    <section class="tools-grid">
+      <label for="sort-by">Sort by:
+        <select id="sort-by">
+          <option value="" selected disabled>Choose here</option>
+          <option value="name">Name</option>
+          <option value="title">Title</option>
+        </select>
+      </label>
+      <label for="show-lecturers" class="checkmark-container">Show Lecturers
+        <input id="show-lecturers" type="checkbox" checked>
+        <span class="checkmark"></span>
+      </label>
+      <input id="search" type="search" placeholder="Search">
+    </section>
+    <section id="content" class="grid-container"></section>
+    <section>
+      <form id="save-form">
+        <h2>Create new person</h2>
+        <input type="text" name="name" placeholder="Type new name">
+        <input type="email" name="mail" placeholder="Type new mail">
+        <input type="text" name="title" placeholder="Type new title">
+        <input type="url" name="url" placeholder="Paste url to image">
+        <button>Save</button>
+      </form>
+    </section>
+  </main>
+  <!-- main js file -->
+  <script src="app.js" type="module"></script>
+</body>
+
+</html>
