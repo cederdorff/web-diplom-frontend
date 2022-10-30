@@ -63,9 +63,7 @@ function savePerson(event) {
 }
 
 function search(event) {
-    console.log(event);
     const searchValue = event.target.value.toLowerCase();
-    console.log(searchValue);
 
     const results = [];
 
@@ -77,6 +75,12 @@ function search(event) {
     }
     displayPersons(results);
 }
+
+// function search(event) {
+//     const searchValue = event.target.value.toLowerCase();
+//     const results = persons.filter(person => person.name.toLowerCase().includes(searchValue));
+//     displayPersons(results);
+// }
 
 // ====== Event Listeners ====== //
 document.querySelector("#save-form").addEventListener("submit", savePerson);
