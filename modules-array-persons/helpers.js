@@ -3,7 +3,6 @@ import { persons } from "./data.js";
 import { displayPersons } from "./app.js";
 
 // ========== helper functions ========== //
-
 export function search(event) {
     const searchValue = event.target.value.toLowerCase();
     const results = persons.filter(person => person.name.toLowerCase().includes(searchValue));
