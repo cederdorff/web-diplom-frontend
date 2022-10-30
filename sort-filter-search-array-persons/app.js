@@ -70,9 +70,7 @@ function savePerson(event) {
 
 function search(event) {
     const searchValue = event.target.value.toLowerCase();
-
     const results = [];
-
     for (const person of persons) {
         const name = person.name.toLowerCase();
         if (name.includes(searchValue)) {
