@@ -85,3 +85,4 @@ function search(event) {
 // ====== Event Listeners ====== //
 document.querySelector("#save-form").addEventListener("submit", savePerson);
 document.querySelector("#search").addEventListener("keyup", search);
+document.querySelector("#search").addEventListener("search", search); // clear button
