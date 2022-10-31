@@ -105,7 +105,7 @@ function showLecturers(event) {
     if (showLecturers) {
         displayPersons(persons);
     } else {
-        const results = persons.filter(person => person.title === "Senior Lecturer");
+        const results = persons.filter(person => person.title !== "Lecturer");
         displayPersons(results);
     }
 }
