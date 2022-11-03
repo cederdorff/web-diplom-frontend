@@ -28,5 +28,17 @@ export const persons = [
         mail: "anki@mail.dk",
         title: "Head of Department",
         img: "https://www.baaa.dk/media/5buh1xeo/anne-kirketerp.jpg?width=800&height=450"
+    },
+    {
+        name: "Maria Louise Bendixen",
+        mail: "mlbe@baaa.dk",
+        title: "Senior Lecturer",
+        img: "https://www.baaa.dk/media/b5ahrlra/maria-louise-bendixen.jpg?width=800&height=450"
+    },
+    {
+        name: "Marlene Ahlgreen Jensen",
+        mail: "maj@baaa.dk",
+        title: "Senior Lecturer",
+        img: "https://www.eaaa.dk/media/fiwflrmn/marlene-ahlgreen-jensen.jpg?width=800&height=450"
     }
 ];
