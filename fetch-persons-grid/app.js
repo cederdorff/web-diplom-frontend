@@ -1,6 +1,6 @@
 let persons = []; // global variable
 
-async function getPerson() {
+async function getPersons() {
     const response = await fetch(
         "https://raw.githubusercontent.com/cederdorff/web-diplom-frontend/main/_data/persons.json"
     ); // fetch request - fetch data from a given url
@@ -26,4 +26,4 @@ function displayPersons(listOfPersons) {
     document.querySelector("#content").innerHTML = html;
 }
 
-getPerson(); // execute get persons to start the fun
+getPersons(); // execute get persons to start the fun
