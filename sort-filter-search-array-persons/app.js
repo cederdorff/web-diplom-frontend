@@ -69,15 +69,17 @@ function savePerson(event) {
 }
 
 function search(event) {
-    const searchValue = event.target.value.toLowerCase();
-    const results = [];
+    const searchValue = event.target.value.toLowerCase(); // value from input
+    const results = []; // empty array to hold matches
     for (const person of persons) {
-        const name = person.name.toLowerCase();
+        // loop trhough all persons (global variable)
+        const name = person.name.toLowerCase(); // make sure name is lower case
         if (name.includes(searchValue)) {
-            results.push(person);
+            // test if name includes a part of the searchValue
+            results.push(person); // if includes, add the persons to the result array
         }
     }
-    displayPersons(results);
+    displayPersons(results); // call displayPersons with the results
 }
 
 // function search(event) {
