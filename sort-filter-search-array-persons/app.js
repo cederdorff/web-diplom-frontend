@@ -87,24 +87,28 @@ function search(event) {
 // }
 
 function sortPersons(event) {
+    //event.target.value is the value of the selected option in the select (dropdown)
     const option = event.target.value;
     if (option === "name") {
-        console.log("sort by name");
+        //if option "name" is selected
         persons.sort((person1, person2) => person1.name.localeCompare(person2.name));
     } else if (option === "title") {
-        console.log("sort by title");
+        //if option "title" is selected
         persons.sort((person1, person2) => person1.title.localeCompare(person2.title));
     }
     displayPersons(persons);
 }
 
 function showLecturers(event) {
+    //event.target.checked is true or false
+    //based on checkbox is checked or not checked
     const showLecturers = event.target.checked;
-    console.log(showLecturers);
-
     if (showLecturers) {
+        //if checked, show all persons
         displayPersons(persons);
     } else {
+        // else (if not checked) filter persons
+        // all persons that are not "Lecturer" will be saved in results
         const results = persons.filter(person => person.title !== "Lecturer");
         displayPersons(results);
     }
