@@ -21,7 +21,8 @@ async function createUser(name, mail, image) {
     const newUser = { name, mail, image };
     const userAsJson = JSON.stringify(newUser);
     const res = await fetch(`${endpoint}/users.json`, { method: "POST", body: userAsJson });
-    console.log(res);
+    const data = await res.json();
+    console.log(data);
 }
 
 // === UPDATE (PUT) === //
@@ -29,7 +30,8 @@ async function updateUser(id, name, mail, image) {
     const userToUpdate = { name, mail, image };
     const userAsJson = JSON.stringify(userToUpdate);
     const res = await fetch(`${endpoint}/users/${id}.json`, { method: "PUT", body: userAsJson });
-    console.log(res);
+    const data = await res.json();
+    console.log(data);
 }
 
 // === DELETE (DELETE) === //
@@ -43,11 +45,23 @@ async function deleteUser(id) {
 // === INITIALIZE APP === //
 
 async function initApp() {
+    console.log("All Users");
     const users = await getUsers();
     console.log(users);
 
+    console.log("One user (user id: 'fTs84KRoYw5pRZEWCq2Z')");
     const userRace = await getUser("fTs84KRoYw5pRZEWCq2Z");
     console.log(userRace);
+
+    // createUser("Mads Madsen", "mads@madsen.dk", "https://www.madsmadsen.dk/images/Mads-Madsen-Image-19.png");
+    // deleteUser("-NGQodO_BsJTuvBTfpOl");
+
+    // updateUser(
+    //     "-NGQooDzCbSUy_c0S1cf",
+    //     "Mads Petersen",
+    //     "mads@petersen.dk",
+    //     "https://www.madsmadsen.dk/images/Mads-Madsen-Image-19.png"
+    // );
 }
 
 initApp();
