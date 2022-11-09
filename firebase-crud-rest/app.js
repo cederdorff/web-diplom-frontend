@@ -1,7 +1,7 @@
 // ====== REST SERVICE ("model") ====== //
 const endpoint = "https://race-crud-rest-default-rtdb.firebaseio.com";
 
-// === READ (GET) === //
+// === READ (GET all users) === //
 async function getUsers() {
     const res = await fetch(`${endpoint}/users.json`);
     const data = await res.json();
@@ -9,6 +9,7 @@ async function getUsers() {
     return userList;
 }
 
+// === READ (GET one user based on an id) === //
 async function getUser(id) {
     const res = await fetch(`${endpoint}/users/${id}.json`);
     const data = await res.json();
@@ -43,7 +44,7 @@ async function deleteUser(id) {
 
 let selectedUserId;
 
-function appendUsers(userList) {
+function displayUsers(userList) {
     let html = "";
 
     for (const user of userList) {
@@ -119,7 +120,7 @@ function updateSubmitEvent() {
 
 async function onUsersListChanged() {
     const users = await getUsers();
-    appendUsers(users);
+    displayUsers(users);
 }
 
 // ========= EVENTS END ====== //
