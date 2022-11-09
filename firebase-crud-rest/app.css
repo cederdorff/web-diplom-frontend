@@ -17,7 +17,6 @@ html {
     color: var(--text-color-dark);
     font-family: var(--font-family);
     height: 100%;
-    text-align: center;
     width: 100%;
 }
 
@@ -27,23 +26,29 @@ body {
 
 h1 {
     font-size: 2em;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    letter-spacing: 0.1px;
 }
 
 h3 {
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin: 0.5em 0 0.2em;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+a {
+    cursor: pointer;
+    color: var(--green);
 }
 
 img {
     width: 100%;
     height: auto;
-}
-
-a {
-    cursor: pointer;
 }
 
 /* ---------- topbar styling ---------- */
@@ -211,6 +216,7 @@ form {
     margin: 2em auto 0;
     background-color: var(--light-green);
     padding: 1em 1em 2em;
+    text-align: center;
 }
 
 button {
