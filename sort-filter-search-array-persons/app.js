@@ -68,24 +68,33 @@ function savePerson(event) {
     form.reset(); // reset (clear) input fields
 }
 
+// function search(event) {
+//     const searchValue = event.target.value.toLowerCase(); // value from input
+//     const results = []; // empty array to hold matches
+//     for (const person of persons) {
+//         // loop trhough all persons (global variable)
+//         const name = person.name.toLowerCase(); // make sure name is lower case
+//         if (name.includes(searchValue)) {
+//             // test if name includes a part of the searchValue
+//             results.push(person); // if includes, add the persons to the result array
+//         }
+//     }
+//     displayPersons(results); // call displayPersons with the results
+// }
+
 function search(event) {
-    const searchValue = event.target.value.toLowerCase(); // value from input
-    const results = []; // empty array to hold matches
-    for (const person of persons) {
-        // loop trhough all persons (global variable)
-        const name = person.name.toLowerCase(); // make sure name is lower case
-        if (name.includes(searchValue)) {
-            // test if name includes a part of the searchValue
-            results.push(person); // if includes, add the persons to the result array
-        }
-    }
-    displayPersons(results); // call displayPersons with the results
+    const searchValue = event.target.value.toLowerCase(); // input text to lower case
+    const results = persons.filter(function (person) {
+        return person.name.toLowerCase().includes(searchValue);
+    });
+    displayPersons(results); // call displayPersons with the filtered results
 }
 
+// with arrow function
 // function search(event) {
-//     const searchValue = event.target.value.toLowerCase();
+//     const searchValue = event.target.value.toLowerCase(); // input text to lower case
 //     const results = persons.filter(person => person.name.toLowerCase().includes(searchValue));
-//     displayPersons(results);
+//     displayPersons(results); // call displayPersons with the filtered results
 // }
 
 function sortPersons(event) {
