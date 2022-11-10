@@ -82,20 +82,20 @@ function savePerson(event) {
 //     displayPersons(results); // call displayPersons with the results
 // }
 
-function search(event) {
-    const searchValue = event.target.value.toLowerCase(); // input text to lower case
-    const results = persons.filter(function (person) {
-        return person.name.toLowerCase().includes(searchValue);
-    });
-    displayPersons(results); // call displayPersons with the filtered results
-}
-
-// with arrow function
 // function search(event) {
 //     const searchValue = event.target.value.toLowerCase(); // input text to lower case
-//     const results = persons.filter(person => person.name.toLowerCase().includes(searchValue));
+//     const results = persons.filter(function (person) {
+//         return person.name.toLowerCase().includes(searchValue);
+//     });
 //     displayPersons(results); // call displayPersons with the filtered results
 // }
+
+// with arrow function
+function search(event) {
+    const searchValue = event.target.value.toLowerCase(); // input text to lower case
+    const results = persons.filter(person => person.name.toLowerCase().includes(searchValue));
+    displayPersons(results); // call displayPersons with the filtered results
+}
 
 function sortPersons(event) {
     //event.target.value is the value of the selected option in the select (dropdown)
