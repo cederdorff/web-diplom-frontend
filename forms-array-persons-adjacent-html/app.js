@@ -28,6 +28,7 @@ let persons = [
 console.log(persons);
 
 function displayPersons() {
+    // reset  <section id="content" class="grid-container">...</section>
     document.querySelector("#content").innerHTML = "";
     //loop through all persons and create an article with content for each
     for (const person of persons) {
@@ -42,7 +43,9 @@ function displayPersons() {
             </article>
         `
         );
-        document.querySelector("article:last-child").addEventListener("click", () => deletePerson(person));
+        document
+            .querySelector("#content article:last-child")
+            .addEventListener("click", () => deletePerson(person));
     }
 }
 
@@ -52,21 +55,4 @@ function deletePerson(person) {
     console.log(person);
     persons = persons.filter(item => item != person);
     displayPersons();
-}
-
-function savePerson(event) {
-    event.preventDefault(); // prevent form refreshing page
-    const form = event.target; // save reference to form in varaiable
-
-    // create new person object based on input values
-    const newPerson = {
-        name: form.name.value,
-        mail: form.mail.value,
-        title: form.title.value,
-        img: form.url.value
-    };
-
-    persons.push(newPerson); // add new peron object to array (persons)
-    displayPersons(); // make sure to reload all persons
-    form.reset(); // reset (clear) input fields
 }
